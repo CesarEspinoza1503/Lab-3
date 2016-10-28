@@ -47,7 +47,7 @@ int main() {
         cout<<endl;
         cont --;
       }
-      //12
+      //1234
       cout<<"Ingrese a: ";
       cin>>binomio;
       cout<<endl;
