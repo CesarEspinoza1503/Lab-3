@@ -41,12 +41,28 @@ int main() {
     if(menu==2){
       int grado_poli;
       cout<<"Ingrese el grado mas alto del polinomio: ";
-      int*** sintetica = crearMatriz(grado_poli);
 
       cin>>grado_poli;
+      int polinomio[grado_poli];
+      int division_sintetica[grado_poli-1];
+      int binomio;
+      for (int i = grado_poli; i >= 0; i--) {
+        cout<<"Ingrese el polinomio x^"<<i<<": ";
+        cin>>polinomio[i];
+        cout<<endl;
+      }
+      cout<<"Ingrese a: ";
+      cin>>binomio;
+      cout<<endl;
+      division_sintetica[0] = polinomio[0];
+      for (int i = 0; i < grado_poli; i++) {
+        division_sintetica[i] = ((division_sintetica[i])*binomio)+polinomio[i];
+        cout<<division_sintetica[i]<<endl;
+      }
     }
+
     if(menu==3){
-      cout<<"Permutacion"<<endl;
+      /*cout<<"Permutacion"<<endl;
       cout<<"Ingrese un numero que no tenga mas de 4 cifras";
       char num;
       cin>> num;
@@ -59,7 +75,7 @@ int main() {
           num[1]= num[i];
         }
         cout<< num[i];
-      }
+      }*/
     }
   }
   return 0;
