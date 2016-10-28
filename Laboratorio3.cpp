@@ -48,9 +48,6 @@ int main() {
         cont --;
       }
       //12
-      //
-
-      /**/
       cout<<"Ingrese a: ";
       cin>>binomio;
       cout<<endl;
