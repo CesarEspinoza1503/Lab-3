@@ -50,6 +50,7 @@ int main() {
       //12
       //
 
+      /**/
       cout<<"Ingrese a: ";
       cin>>binomio;
       cout<<endl;
