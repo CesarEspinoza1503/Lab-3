@@ -1,0 +1,89 @@
+struct CursorRow{
+	int next, prev;
+	Object* data;
+};
+
+CURSORES
+
+class FSDLCursorList : public ADTList{
+	class CursorRox{
+	public:
+		int next, prev;
+		Object* data;     //Declaracion
+		CursorRow();
+		~CursorRow();
+	};
+};
+
+CursorRow* rows;
+int capacity, head;
+
+public:
+	FSDLCursorList(int);
+	virtual remove;
+	int capacity, head;
+	int nextFreeRow() const;
+	.
+	.
+	.
+	.
+	.
+	
+};
+
+FSDLCursorList::CursorRow::CursorRow(){  //Encabezado
+	next = prev = -1; //Definicion
+	data = NULL;
+}
+
+FSDLCursorList::FSDLCursorList(int capacity):
+			capacity(capacity){
+	rows = new CursorRows[capacity];
+	head = -1;
+}
+
+/* rows[0].next = rows.[0].prev = -1;
+| head=0;
+| size ++;  
+| int nextRow = nextFreeRow();
+| rows[nextRow].data = e;
+| rows[nextRow].next = head;
+| rows[nextRow].prev = -1;
+| rows[head].prev = nextRow;
+| head = nextRow;
+| size ++ */
+bool FSDLCursorList::insert(Object* e, int p){
+	if(size==0){
+
+	}
+	if(size>0 && p==0){
+
+	}	
+	if(size > 0 || head != -1 || p>0){
+		int nextRow = nextFreeRow();
+		int temp = head;
+		for (i=0; i < p-1 ; i++){
+			temp = rows[temp].next;
+			if(temp == p){
+				rows[nextRow].data = e;
+				rows[nextRow].prev = temp;
+				rows[nextRow].next = rows[temp].next;
+				rows[temp].next = nextRow;
+				rows[rows[nextRow].next].prev = nextRow;
+				size++;
+			}
+		
+		}
+		
+		
+	}
+}
+
+Listas Employees
+	Agregar Empleado
+	Listar Empleados
+	Borrar Empleados
+	Sueldo Promedio
+	Sueldo Mayor
+	Sueldo Menor
+	Ajuste Inflacion 0.05 ( incremento de 5% para todos los sueldos) - se pide un numero, se le va incrementar ese % a todos los sueldos

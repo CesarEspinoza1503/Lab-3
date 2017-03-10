@@ -1,0 +1,26 @@
+bool verify(string c){
+	stack stack //declaracion
+	stack.init() //inicializacion
+	for(int i = 0; i < c.length();i++)
+		if(opening(c[i]))
+			stack.push(c[i])
+		else
+			if(counter(c[i], stack.peek())
+				stack.pop()
+			else
+				return false
+	return stack.isEmpty()
+}
+
+
+ADTStack
+
+
+
+
+
+
+
+
+
+ADTQueue

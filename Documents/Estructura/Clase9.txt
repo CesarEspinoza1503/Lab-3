@@ -1,0 +1,43 @@
+Un arbol puede estar ordenado asendentemente o descendentemente
+
+asendentemente
+Si todo lo que esta a la izquierda de un nodo es menor
+
+||||| Precedencia |||||
+
+
+(1)Convertir infijo->postfijo
+
+(2) dada una expresion aritmetica en postfijo->evaluarla
+
+
+ADTTree
+	Init
+	father(n):TreeNode
+	leftestSon(n):TreeNode
+	rightBrother(n):TreeNode
+	label(n):Object
+static  create(n,A1,A2,...,Ak):ADTTree
+	getRoot():TreeNode
+	clear():void
+
+---------------------------------------------------
+
+
+
+ADTTree a , b 
+a = ADTTree::create(4)
+b = ADTTree::create(9)
+c = ADTTree::create(8)
+d = ADTTree::create(3)
+e = ADTTree::create(2, a , b)
+f = ADTTree::create(1,c)
+g = ADTTree::create(5,d, e, f)
+
+
+//Quiero que hagan un arbol de pilas
+
+
+
+
+Dibujar un organigrama, sacado de un archivo de texto, (foto)

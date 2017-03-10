@@ -1,0 +1,32 @@
+Implementacion de Grafos
+
+*Matriz de Adyacencia
+*Lista de Adyacencia
+
+
+nXn  | n = |v|
+
+Grado de un vertice
+la cantidad de conexiones que tiene
+
+
+hay dos mediciones de grados en estos grafos
+
+-indegree
+-outdegree
+
+normalmente los grafos no estan totalmente conectados
+
+
+Dijkstra(ini)
+	s={o}
+	for i=1 ; i < n ; i++
+		D[i] = G.getWeight(0,i)
+	for i=1 ; i < n-1 ; i++
+		elige un vertice w en V-S tal que D[w] sea minimo
+		S.add(w)
+		for each V in V-S
+			D[v] = min(D[V], D[w] + G.getWeight(w,v))
+
+
+

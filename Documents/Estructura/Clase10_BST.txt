@@ -1,0 +1,90 @@
+Binary Tree
+ arbol binario tiene un maximo de dos hijos por nodo.
+
+BST
+Binary Search Tree
+Es un arbol binario de busqueda siempre esta ordenado
+
+BBST
+Arboles binarios de busqueda
+Garantian que el arbol nunca se degenerara
+
+
+public boolean search(comparable key){
+	if(root==Null)
+		return false
+	BTNode temp = root;
+
+	while(temp!=null){
+		compareValue = key.compareTo(temp.data);
+		if(compareValue==0)
+			return true;
+	else if(compareValue < 0)
+		temp = temp.left;
+	else
+		temp = temp.right;
+	}
+	return false;
+	
+}
+
+
+public boolean insert(comparable key){
+	if(root =null){
+		root = data;
+		return true;
+	}
+	BTNode temp = root;
+	while(temp!=null)
+		compareValue = key.compareTo(temp.data);
+		if(compareValue<0)
+			if(temp.left ==null){
+				temp.left = data;
+				size++;
+				return true
+			}
+			temp = temp.left;
+		else{
+			if(temp.right == null)
+			{
+				temp.right = data;
+				size++;
+				return true;
+			}
+			temp = temp.right;
+		}
+	}
+	return false;
+}
+
+
+public void insert(Comparable e) {
+	BTNode neo = new BTNode(e);
+	if(root == null){
+		root = neo
+		return
+	}
+	BTNode temp = root;
+	while(true){
+		compareValue = e.compareTo(temp.data)
+		if(compareValue == 0)
+			return
+		if(compareValue < 0){
+			if(temp.left == null){
+				temp.left = neo
+				return
+			}
+			else{
+				temp = temp.left
+			{
+		}else{
+			if(temp.right == null){
+				temp.right = neo
+				return
+			}else{
+				temp = temp.right
+			}
+
+		}
+	}
+}

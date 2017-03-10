@@ -1,0 +1,161 @@
+TDAList list
+list.init()
+print(list.insert(T,3))
+print(list.insert(H,0))
+print(list.insert(R,0))
+print(list.insert(Q,1))
+print(list.fist())
+print(list.last())
+for(i=0; i<size() ; i++)
+	print(list.get(i))
+print(list.indexOf(T))
+for(i=0; i<size(); i++)
+	print(list.remove(0))
+
+RQH
+RH
+
+
+-------------------------------------------------------------
+
+Class ADTList{
+protected:
+	int size;
+public:
+	ADTList();
+	virtual ~ADTList();
+	int size();
+	virtual bool insert(object*, int)=0;
+	virtual Object* remove(int) = 0;
+	virtual Object* first() const = 0;
+	virtual Object* last() const = 0;
+	virtual void clear()=0;
+	virtual int indexOf(Object*) const = 0;
+	virtual Object* get(int) const = 0;
+	virtual int capacity() const = 0;
+	virtual bool isEmpty() const = 0;
+	virtual bool isFull() const = 0;
+}
+
+ADTlist::ADTList(){
+	size = 0;
+}
+ADTList::~ADTList(){ }
+
+int ADTList::size(){
+	return size;
+}
+----------------------------------------------------------------
+
+Class FSArrayList : public ADTList{
+	int capacity;
+public:
+	FSArrayList(int);
+	virtual ~FSArrayList();
+	virtual bool insert(Object*, int);
+	virtual Object* remove(int);
+	virtual Object* first() const;
+	virtual Object* last() const;
+	virtual void clear();
+	virtual int indexOf(Object*) const;
+	virtual Object* get (int) const;
+	virtualint capacity() const;
+	virtual bool isEmpty() const;
+	virtual bool isFull() const;
+
+};
+
+FSArrayList::FSArrayList(int capacity){
+	this->capacity = capacity;
+	array = new Object*[capacity];
+	if (! array){
+	cerr << "Out of memory" << endl;
+	exit(1);
+	}
+}
+
+FSArrayList::~FSArrayList(){
+	for(int i =0; i<size(); i++){
+		if(array[i])
+			delete array[i];
+	}
+	delete[]array;
+}
+
+bool FsArrayList::insert(Object* e, int p){
+	if (p < 0 || p > size())
+		return false;
+	if (isFull)
+		return false;
+
+	for(int i=size; i>p;i--)
+		array[i]=array[i-1];
+	array[p]=e;
+	size++;
+	return true;
+}
+
+
+void FSArrayList::clear(){
+	for(int i = 0, i < size() ; i++){
+		if(array[i]){
+			delete array[i];
+			array[i] = NULL;
+		}
+	}
+}
+
+
+
+--------------------------------------------------------
+
+Class Object{
+	public:
+		Object();
+		Virtual~ Object();
+		Virtual string toString() const;
+		Virtual bool equals(Object*) const;
+};
+
+Object::Object() { }
+Object::~Object() { }
+
+string Object::toString() const {
+	stringstream ss;
+	ss << "Object@" << this;
+	return ss.str();
+}
+bool Object::equals(Object* other) const {
+	return other == this;
+}
+
+---------------------------------------------------------------
+
+
+Class Person : public Object{
+		string name;
+		int age;
+	public:
+		Person(string, int);
+		virtual string toString() const;
+		virtual bool equals(Object*) const;
+};
+
+Persona::Person(string name , int age):
+	name(name),age(age) {}
+
+string Person::toString() const {
+	stringstream ss;
+	ss << "Name " << name << " Age" << age;
+	return ss.str();
+}
+
+bool Person::equals(Object* other) {ññ
+	if (!dynamic.cast<Person*>(other))
+		return false;
+
+	Person* p = dynamic.cast<Person*>(other);
+	return p -> name == name;
+}
+
+

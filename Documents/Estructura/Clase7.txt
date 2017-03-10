@@ -1,0 +1,145 @@
+TDA Pila &  COla
+
+Stack
+Init
+Bool push(e)
+Object pop()
+Object peek()
+Bool isEmpty()
+Bool isFull()
+
+
+Queue
+Init 
+Bool queue(e)
+Object dequeue()
+Object peek()
+Bool isEmpty()
+Bool isFull()
+
+
+Stack S
+S.init()
+print s.push(R)
+print s.push(z)
+print s.peek()
+print s.push(H)
+print s.pop()
+print s.pop()
+print s.pop()
+print s.push(k)
+while(!s.isEmpty()){
+	print s.pop()
+}
+
+
+Queue q
+q.init
+print q.queue(R)
+print q.queue(Z)
+print q.peek()
+print q.queue(H)
+print q.peek()
+print q.dequeue()
+print q.dequeue()
+print q.dequeue()
+print q.queue(k)
+while(!q.isEmpty()){
+	print q.dequeue()
+}
+
+
+queue- mete y mete en el mismo extremo
+dequeue - saca y saca del otro extremo
+
+
+
+
+
+Stack
+R Z   Z    RZH   HZR   K    K
+
+True
+True
+Z
+True
+H
+Z
+R
+True
+(while es false)
+K
+
+
+Queue
+R Z   R    H     R Z  H     K    K
+
+True
+True
+R
+True
+R
+Z
+H
+True
+(while es false)
+K
+
+
+
+s.init()
+string cadena;
+cin >> cadena
+
+for(i=0, cadena.length()-1, i++)
+	s.push(cadena[i])
+
+char temp1, temp2;
+temp1 = s.pop();
+int cont = 0;
+do{
+	temp2 = s.pop()
+	if( (temp1=='(' && temp2==')') || ( temp1==')' && temp2=='(' ))
+	{
+		temp1 = s.pop()
+		temp2 = s.pop()
+	}
+	if( (temp1=='[' && temp2==']') || ( temp1==']' && temp2=='[' ))
+	{
+		temp1 = s.pop()
+		temp2 = s.pop()
+	}
+	if( (temp1=='{' && temp2=='}') || ( temp1=='}' && temp2=='{' ))
+	{
+		temp1 = s.pop()
+		temp2 = s.pop()
+	}else
+	{
+		s.push(s.pop())
+		cont ++;
+	}
+	
+
+}while(s.size()!=0 || cont != s.size())
+
+if(s.size()==0){
+	print("balanceado")
+
+
+
+bool verify(string c){
+	stack stack //declaracion
+	stack.init() //inicializacion
+	for(int i = 0; i < c.length();i++)
+		if(opening(c[i]))
+			stack.push(c[i])
+		else
+			if(counter(c[i], stack.peek())
+				stack.pop()
+			else
+				return false
+	return stack.isEmpty()
+}
+
+
+

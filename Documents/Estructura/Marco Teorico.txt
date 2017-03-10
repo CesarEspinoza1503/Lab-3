@@ -1,0 +1,7 @@
+Draft
+
+Marco Teorico
+
+Este trabajo analizara los tiempos de ejecucion de varios programas cuando son hechos de forma
+iterativa y recursiva. Para esto se tomara en cuenta el proceso en ejecucion, el tiempo de ejecucion de
+los dos procesos. Buscando el mas optimo entre los dos.

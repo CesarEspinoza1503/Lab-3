@@ -1,0 +1,96 @@
+
+Estructura de DAtos 
+Coleccion de DAtos que se organizan
+
+
+TDA ADT
+Tipos Datos Abstracto
+
+
+
+TDA Fundamentales
+	Lista: Define una secuencia(lineal) de elementos donde cada uno de ellos tiene una posicion
+	Pila:
+	Cola:
+	Arboles:
+
+
+Operaciones de Lista
+	Inicializacion(): void
+		Precondicion: 
+			-La lista no existe
+			-Hay memoria para la operacion
+		Postcondicion:
+			-La lista esta en condiciones para recibir elementos
+	Insert(E , P): boolean
+		Precondicion:
+			-La lista no esta llena
+			-P es una posicion valida
+			-Hay memoria para la operacion
+		Postcondicion:
+			-El elemento E queda en la lista en la posicion p
+			-Si p < size() los elementos se corren
+		Retorna:
+			-True si la operacion tuvo exito, false de lo contrario
+	first(): E
+		Devuelve el primero
+	last(): E
+		Devuelve el ultimo
+	size(): int
+		Tamaño
+	capacity(): int
+		Que tanto puede almacenar. Cuando no es fija retorna -1
+	remove(p): E
+		Borra. Devuelve el elemento que se borro. Se corre la lista y disminuye el size.
+	isEmpty(): boolean
+	isFull(): boolean
+	clear(): void
+	indexOf(E): int
+	get(p): E
+
+Datos Lista
+	size : int
+
+
+TDAList L
+L.init()
+
+print(L.insert(A,0)); Coloca en la posicion 0
+
+print(L.insert(X,0)); Coloca en la posicion 0 y mueve el primer dato a la posicion 1
+
+print(L.insert(Y,3)); Coloca en la posicion 0 y mueve los demas
+
+print(L.insert(R,1)); Coloca en la posicion 0 y mueve los demas
+
+for(i=0;i<L.size();i++){
+	print(L.get(i)); Imprime el elemento de la posicion i
+}
+
+print(L.remove(1)); Imprime el elemento en posicion 1, lo remueve de la lista, mueve los elementos y reduce el tamaño de la lista
+print(L.size()); Imprime le tamaño de la lista
+print(L.isEmpty()); Imprime true si la lista esta vacia, false de lo contrario
+print(L.first()); Imprime el primer elemento de la lista
+print(L.last()); Imprime el ultimo elemento de la lista
+print(L.indexOf(Y));	
+print(L.insert(z,2));
+
+for(i=0, i<L.size();i++)
+	print(L.get(i))
+
+
+
+IMPLEMENTACION
+	*Arreglos
+   A  {		-Tamaño fijo		a
+      {		-Tamaño variable	b
+	*Listas enlazadas
+ 		-Enlaces sencillos	c
+   B  {
+		-Enlaces Dobles		d
+	*Cursores
+		-AxB
+
+a Inicializacion entero
+	capacidad
+

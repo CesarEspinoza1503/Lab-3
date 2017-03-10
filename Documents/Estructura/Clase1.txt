@@ -1,0 +1,38 @@
+T(n)= nc1 + c2
+
+O: el termino sin coficiente que domina el polinomio
+O(n)
+
+
+O(logx)
+
+
+Rendimiento de logaritmos:
+---------------------------
+  ____________________
+||--------------------||
+||GRAFICAR ESTAS ONDAS||
+||--------------------||
+||--------------------||
+
+O(1)
+O(logn)
+O(n)
+O(n logn)
+O(n²)
+O(n³)
+O(n⁴)
+.
+.
+.
+O(2n)
+O(n!)
+
+
+(2)
+A) Averiguar todo lo que puedan sobre recursiva
+
+B) ¿Sera que factorial recursiva es mas rapido que iterativo? ¿Porque?
+
+R//: Factorial Recursiva es mas lento que el iterativo. La razon es de
+     que la recursiva forma una pila causando un peso mayor en la memoria.

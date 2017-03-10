@@ -1,0 +1,25 @@
+Los cursores son una simulacion de lista enlazadas utilizando array
+
+
+
+CursorList list
+list.init(8)
+list.insert(X,0)
+list.insert(Y,1)
+list.insert(Z,0)
+list.remove(1)
+list.insert(H,2)
+
+PP
+----------------------------------------
+| |-----------------| |		       |
+| |-----------------| |		       |
+| |-----------------| |		       |
+| |-----------------| |                |
+| |-----------------| |                |
+| |-----------------| |                |
+---------------------------------------|
+|			|head	       |
+|0  0    0  0  0	|size          |
+|			|              |
+|_______________________|______________|

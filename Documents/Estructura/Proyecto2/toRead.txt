@@ -1,0 +1,8 @@
+Presidente,Cesar,5000
+	Vicepresidente,JOH,2500
+		Secretario,Pepe,500
+			Mandadero,Juan,400
+				Aguatero,Adam,300
+				Aguatero,Sandler,250
+		Secretario,Mario,600
+	Director,Casco,2800

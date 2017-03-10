@@ -1,0 +1,43 @@
+Arbol de Huffman: ¿Que son?
+		  ¿Como construirlos?
+		  ¿Como comprimir?  codificar
+		  ¿Como descomprimir? decodificar?
+
+
+
+public interface Operation{
+	void operation(object o);
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+public class BinarySearchTree{
+	private class Node{
+		Node left, right;
+		Object data;
+	}
+	private Node root;
+
+	public BinarySearchTree(){
+		root = null;
+	}
+
+	public void insert(Object element){
+		.
+		.
+		.
+	}
+
+	public void inorder(Operation op){
+		inorder(root, op);
+	}
+
+	private void inorder(Node node, Operation op){
+		if(node == null)
+			return
+		inorder(node.left , op)
+		op.operation(node.data)
+		inorder(node.right, op=
+	}
+}
+
+

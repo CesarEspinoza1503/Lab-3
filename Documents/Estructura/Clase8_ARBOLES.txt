@@ -1,0 +1,30 @@
+Arbol
+
+Definicion
+*Un nodo es un arbol
+*Dado n un nodo y A1, A2,...,Ak
+arboles con raices n1,n2,...,nk
+un nuevo arbol se puede construir
+haciendo n padre de A1,A2,...,Ak
+
+Terminos
+	camino
+
+	longitud
+
+	antecesor/antecesor propio
+
+	descendiente/descendiente propio
+
+	hoja- nodos que no tiene decendientes
+
+	raiz- el nodo papa del arbol
+
+
+	altura de un nodo - la altura de un nodo es el camino maximo del nodo a una hoja max|{camino(nodo,hoja)}|
+
+	altura de arbol - altura de la raiz
+
+	profundidad de un nodo - |camino(raiz, nodo)|
+
+Estructura de Datos y algoritmos AHO

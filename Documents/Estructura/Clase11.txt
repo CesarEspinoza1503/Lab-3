@@ -1,0 +1,73 @@
+AVL Tree
+arbol que nunca se degenera
+
+Insertar
+Agregar al fondo del heap
+
+Comparar elemento con su antecesor si esta en orden correcto parar
+
+Sino esta en orden correcto, intercambiar con antecesor y regrese al paso anterior
+
+HEAP TREE
+Partially sorted
+
+
+		
+		  1
+	   /		\
+	3		  2
+      /   \             /   \
+   4	    7         8       9        
+  /
+ 14     
+
+
+
+Eliminar
+
+Reemplazar la raiz con el ultimo elemento en el ultimo nivel
+
+Comparar la raiz con sus hijos, si esta en orden correcto parar
+
+Sino esta en orden correcto, intercambie el elemento con uno de sus hijos (mayor para max heap, menor para min heap),
+regrese al paso anterior
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function that takes two lists and make a new list and haves the elements of the other
+
+ADTList* VectorMultiply (ADTList* A, ADTList* b){
+	ADTList* result;
+	int temp=0;
+	if(A.size() > B.size()){
+		for(i=0; i< B.size();i++){
+			result->insert(A.get(i));
+			result->insert(B.get(i));
+			temp++;
+		}
+		for(i=temp ; i < A.size();i++){
+			result->insert(A.get(i));
+		}
+	}
+	if(A.size() < B.size()){
+		for(i=0; i < A.size();i++){
+			result->insert(A.get(i));
+			result->insert(B.get(i));
+			temp++;
+		}
+		for(i=temp ; i < B.size();i++){
+			result->insert(B.get(i));
+		}
+	}
+	if(A.size()==B.size()){
+		for(i=0; i < A.size();i++){
+			result->insert(A.get(i));
+			result->insert(B.get(i));
+		}
+	}
+
+	return result;	
+}
+
+
+
+Given two lists make a function that returns a new list that returns only the intersections of th elist

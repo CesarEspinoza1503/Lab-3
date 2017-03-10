@@ -1,0 +1,14 @@
+father(n)
+leftestson(n) = root
+rightbrother(n = this)
+label(n = root)
+get root
+
+inorder(Tree t, Operation op)
+	if !t.leftestson()
+		return
+	inorder(t.leftestson())
+	op.operation(t.label())
+	for(Tree temp=t.rightBrother(t.leftestSon()); temp!=NULL; temp = temp.rightBrother()
+		inorder temp;
+
